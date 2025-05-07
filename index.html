@@ -38,12 +38,19 @@
         .section:last-child {
             margin-bottom: 0;
         }
-        pre {
-            background-color: #f4f4f4;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
             padding: 10px;
-            border-radius: 8px;
-            overflow-x: auto;
-            font-size: 14px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -81,17 +88,24 @@
 
         <div class="section">
             <h2>Пример расписания ухода</h2>
-            <pre>
-| День | Утро | Вечер |
-|------|------|-------|
-| Понедельник | Ниацинамид + SPF | Differin + увлажнение |
-| Вторник | Витамин С + SPF | BHA + увлажнение |
-| Среда | Ниацинамид + SPF | Differin + увлажнение |
-| Четверг | Витамин С + SPF | BHA + увлажнение |
-| Пятница | Ниацинамид + SPF | Differin + увлажнение |
-| Суббота | Отдых (увлажнение и SPF) | Маска с глиной или AHA |
-| Воскресенье | Отдых (увлажнение и SPF) | Увлажнение или тканевая маска |
-            </pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th>День</th>
+                        <th>Утро</th>
+                        <th>Вечер</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Понедельник</td><td>Ниацинамид + SPF</td><td>Differin + увлажнение</td></tr>
+                    <tr><td>Вторник</td><td>Витамин С + SPF</td><td>BHA + увлажнение</td></tr>
+                    <tr><td>Среда</td><td>Ниацинамид + SPF</td><td>Differin + увлажнение</td></tr>
+                    <tr><td>Четверг</td><td>Витамин С + SPF</td><td>BHA + увлажнение</td></tr>
+                    <tr><td>Пятница</td><td>Ниацинамид + SPF</td><td>Differin + увлажнение</td></tr>
+                    <tr><td>Суббота</td><td>Отдых (увлажнение и SPF)</td><td>Маска с глиной или AHA</td></tr>
+                    <tr><td>Воскресенье</td><td>Отдых (увлажнение и SPF)</td><td>Увлажнение или тканевая маска</td></tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="section">
